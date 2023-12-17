@@ -1,0 +1,92 @@
+.classnav{
+    padding: 2px;
+}
+.classcontainer{
+    background-color: rgb(226, 151, 53);
+}
+.box{
+    height: 200px;
+    margin-block-end: 2px;
+    margin-block-start: 2px;
+    margin-inline-end: 4px;
+    margin: 10px 10px;
+    background-color: rgb(165, 42, 93);
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+ 
+
+}
+.box p{
+flex: 1;
+margin-inline-end: 4px;
+}
+.box img{
+    border-radius: 10px;
+    height: 150px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+}
+
+.pqr{
+    background-color: darksalmon !important;
+    font: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+
+.cardcontainer{
+    margin: 10px;
+   display: grid;
+   justify-content: center;
+   border-radius: 10px;
+    background-color: rgb(247, 180, 217);
+    background-image: url(https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-42805.jpg);
+    
+}
+.cardcontainer > .card{
+    box-shadow: 40px 30px 100px 50px rgb(236, 99, 122) inset;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 300px) {
+    .cardcontainer{
+        
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+        
+}
+}
+@media only screen (min-width:300px) and (max-width: 850px) {
+    .cardcontainer{
+        
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 20px;
+}
+}
+@media only screen and (min-width: 850px) and (max-width: 1250px) {
+    .cardcontainer{
+        
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 20px;
+        
+}
+}
+
+@media only screen and (min-width: 1250px) {
+    .cardcontainer{
+        
+        grid-template-columns: repeat(5,1fr);
+        column-gap: 20px;
+}
+}
